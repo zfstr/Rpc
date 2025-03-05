@@ -1,0 +1,5 @@
+# set(CALLER_LIST calluserservice.cc ../user.pb.cc)
+set(CALLER_LIST callfriendservice.cc ../friend.pb.cc)
+# set(EXAMPLE_LIST )
+add_executable(consumer ${CALLER_LIST})
+target_link_libraries(consumer mprpc protobuf)

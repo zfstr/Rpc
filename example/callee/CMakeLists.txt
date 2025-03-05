@@ -1,0 +1,5 @@
+# set(CALLEE_LIST userservice.cc ../user.pb.cc)
+set(CALLEE_LIST friendservice.cc ../friend.pb.cc)
+# set(EXAMPLE_LIST )
+add_executable(provider ${CALLEE_LIST})
+target_link_libraries(provider mprpc protobuf)
